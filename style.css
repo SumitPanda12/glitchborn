@@ -402,3 +402,119 @@ animation: flicker 2s infinite;
     transform: scale(1.1);
   }
 }
+/* =============================
+   BASE CSS (Your existing code)
+   ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+/* Your existing desktop code remains unchanged */
+
+/* =============================
+   RESPONSIVE DESIGN
+   ============================= */
+
+/* -------- Tablet Screens (<=1024px) -------- */
+@media (max-width: 1024px) {
+  #loop {
+    font-size: 70px;
+    top: 25%;
+  }
+  #page1>#right-text, 
+  #page1>#left-text,
+  #page2>#text1, 
+  #page2>#text2, 
+  #page3>#text3 {
+    top: 25%;
+    left: 5%;
+    right: 5%;
+    font-size: 80%;
+  }
+  #page1>#left-text, 
+  #page2>#text2, 
+  #page3>#text3 {
+    text-align: center;
+    right: auto;
+  }
+  #page1>#right-text, 
+  #page2>#text1 {
+    text-align: center;
+    left: auto;
+  }
+  #nav {
+    padding: 0px 15px;
+  }
+  #nav>h3 {
+    font-size: 18px;
+  }
+  #nav button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  #logo {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+}
+
+/* -------- Mobile Screens (<=600px) -------- */
+@media (max-width: 600px) {
+  #loop {
+    font-size: 40px;
+    top: 20%;
+  }
+  #page>h3 {
+    top: 50%;
+    font-size: 16px;
+  }
+  #page>h4 {
+    top: 58%;
+    left: 10%;
+    font-size: 14px;
+  }
+  #page1>#right-text>h1,
+  #page1>#left-text>h1,
+  #page2>#text1>h1,
+  #page3>#text3>h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  #page1>#right-text>h3,
+  #page1>#left-text>h3,
+  #page2>#text1>h3,
+  #page3>#text3>h3 {
+    font-size: 14px;
+  }
+  #page2>#text2>p {
+    font-size: 13px;
+  }
+  #nav {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  #nav>h3 {
+    font-size: 16px;
+  }
+  #nav button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  #logo {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
